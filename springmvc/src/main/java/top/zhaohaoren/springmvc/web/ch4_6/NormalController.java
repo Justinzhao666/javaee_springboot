@@ -9,9 +9,7 @@ import top.zhaohaoren.springmvc.service.DemoService;
 public class NormalController {
 	@Autowired
 	DemoService demoService;
-	
 
-	
 	@RequestMapping("/normal")
 	public  String testPage(Model model){
 		model.addAttribute("msg", demoService.saySomething());
