@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/anno") //2
 public class DemoAnnoController {
 
-	@RequestMapping(produces = "text/plain;charset=UTF-8")	// 3
-	public @ResponseBody String index(HttpServletRequest request) { // 4
+	@RequestMapping(produces = "text/plain;charset=UTF-8")	// 3 指定返回Response的媒体类型和字符集 - 返回文本
+	public @ResponseBody String index(HttpServletRequest request) { // 4 这个地方什么鬼？要看看以前的东西。这是之前servlet的，现在mvc中也能用。
 		return "url:" + request.getRequestURL() + " can access";
 	}
 
@@ -31,7 +31,7 @@ public class DemoAnnoController {
 
 	}
 
-	@RequestMapping(value = "/obj", produces = "application/json;charset=UTF-8")//7
+	@RequestMapping(value = "/obj", produces = "application/json;charset=UTF-8")//7 返回json
 	@ResponseBody //8
 	public String passObj(DemoObj obj, HttpServletRequest request) {
 		

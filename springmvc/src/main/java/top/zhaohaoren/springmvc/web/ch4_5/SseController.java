@@ -6,6 +6,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * 服务器推送：
+ * 每5s推送一次
+ *
+ * SSE：server send event
+ */
 @Controller
 public class SseController {
 	

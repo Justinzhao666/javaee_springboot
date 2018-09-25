@@ -12,6 +12,9 @@ import top.zhaohaoren.springmvc.domain.DemoObj;
 import java.io.IOException;
 import java.nio.charset.Charset;
 
+/**
+ * 专门处理request 和 Response 数据的
+ */
 public class MyMessageConverter extends AbstractHttpMessageConverter<DemoObj> {//1
 
 	public MyMessageConverter() {
@@ -21,7 +24,6 @@ public class MyMessageConverter extends AbstractHttpMessageConverter<DemoObj> {/
 	/**
 	 * 3
 	 */
-
 	@Override
 	protected DemoObj readInternal(Class<? extends DemoObj> clazz,
 			HttpInputMessage inputMessage) throws IOException,

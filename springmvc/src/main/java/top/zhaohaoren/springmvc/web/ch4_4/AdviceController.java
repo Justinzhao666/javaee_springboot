@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import top.zhaohaoren.springmvc.domain.DemoObj;
 
+// 测试全局异常检测
 @Controller
 public class AdviceController {
 	@RequestMapping("/advice")

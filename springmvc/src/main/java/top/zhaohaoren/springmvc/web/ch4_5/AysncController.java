@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.async.DeferredResult;
 import top.zhaohaoren.springmvc.service.PushService;
 
+/**
+ * 异步任务controller
+ */
 @Controller
 public class AysncController {
     @Autowired
